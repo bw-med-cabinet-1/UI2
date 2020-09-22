@@ -101,10 +101,18 @@ h1, h2{
     padding:0 2%;
     font-family: 'Montserrat', sans-serif;
 }
+.team a{
+    font-size: 2rem;
+   display:flex;
+   flex-flow: row;
+}
+.team a:hover{
+    color:black;
+    font-size: 3rem;
+}
 h3{
     font-size: 2.5rem;
 }
-
 .bottom_nav{
     display:flex;
     flex-direction: row;
