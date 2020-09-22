@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 *{
     box-sizing:border-box;
@@ -15,6 +15,23 @@ body{
     font-size: 1.6rem;
     line-height:2;
 }
+#nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background:lightgreen;
+}
+.smalltxt{
+    padding: 0 0 0 45%;
+}
+.top_nav a{
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid black;
+}
+.top_nav a:hover{
+    background:black;
+    color:lightgreen;
+}
 .header{
     display:flex;
     flex-flow: row;
@@ -22,7 +39,7 @@ body{
     margin:0;
     padding:0;
 }
-h1{
+h1, h2{
     background: url(https://images.unsplash.com/photo-1457573179814-451f407f0186?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
     background-size: cover;
     background-repeat: no-repeat;
@@ -44,8 +61,12 @@ h1{
     background:lightgreen;
     color:white;
 }
-
-.links{
+.header p{
+    text-align:center;
+    font-size:3rem;
+    margin:2%;
+}
+.links, .team{
     display:flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -54,6 +75,7 @@ h1{
 .links img{
     height:45vh;
     width:45vh;
+    border-radius: 25%;
 }
 .links a{
     display:flex;
@@ -67,6 +89,36 @@ h1{
     text-decoration: none;
     color: lightgreen;
 }
+.team img{
+    height:45vh;
+    width:45vh;
+}
+.team h3, .team p{
+    display:flex;
+    flex-flow: row;
+    width:45vh;
+    justify-content:center;
+    padding:0 2%;
+    font-family: 'Montserrat', sans-serif;
+}
+h3{
+    font-size: 2.5rem;
+}
+
+.bottom_nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background:lightgreen;
+}
+.bottom_nav a{
+    font-family: 'Montserrat', sans-serif;
+}
+.bottom_nav a:hover{
+    background:black;
+    color:lightgreen;
+}
+
 
 @media(max-width:800px){
     .header{
@@ -81,11 +133,39 @@ h1{
     }
     .links{
         flex-flow: column;
+        justify-content: center;
     }
     .links img{
         size:cover;
         height:45vh;
-        width:100%;
-        justify-content: center;
+        width:80%;
+        padding: 0 0 0 15%;
+        border-radius: 0%;
+    }
+}
+
+@media(max-width:500px){
+    #nav{
+        flex-direction: column;
+    }
+    .smalltxt{
+        padding:0;
+        text-align: center;
+    }
+    .top_nav a{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        text-decoration: none;
+    }
+    .bottom_nav{
+        flex-direction: column;
+    }
+    .bottom_nav a{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid black;
     }
 }
