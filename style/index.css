@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+/*CSS Reset*/
 *{
     box-sizing:border-box;
     padding: 0;
@@ -15,6 +15,7 @@ body{
     font-size: 1.6rem;
     line-height:2;
 }
+/* end of css reset begining of styling */
 #nav{
     display:flex;
     flex-direction: row;
@@ -32,6 +33,7 @@ body{
     background:black;
     color:lightgreen;
 }
+/* all of the aboveis the very top section of my pages */
 .header{
     display:flex;
     flex-flow: row;
@@ -89,6 +91,7 @@ h1, h2{
     text-decoration: none;
     color: lightgreen;
 }
+/* even though the pages are the same layout, I had to give the about page section with team members a different class to slightly tweak the formatting from the links on the main page */
 .team img{
     display:flex;
     flex-flow: row;
@@ -131,7 +134,7 @@ h3{
     color:lightgreen;
 }
 
-
+/* these media queries seem to make it accessible across most devices and screen sizes */
 @media(max-width:800px){
     #nav{
         flex-direction: column;
