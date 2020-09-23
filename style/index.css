@@ -94,13 +94,13 @@ h1, h2{
 /* even though the pages are the same layout, I had to give the about page section with team members a different class to slightly tweak the formatting from the links on the main page */
 .team img{
     display:flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     height:45vh;
     width:45vh;
 }
 .team h3, .team p{
     display:flex;
-    flex-flow: row;
+    flex-flow: row nowrap;
     width:45vh;
     padding: 0 2%;
     justify-content:center;
@@ -111,6 +111,7 @@ h1, h2{
    display:flex;
    flex-flow: row;
    justify-content: center;
+   margin: 0 0 2% 0;
 
 }
 .team a:hover{
