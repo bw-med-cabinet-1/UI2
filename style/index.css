@@ -90,6 +90,8 @@ h1, h2{
     color: lightgreen;
 }
 .team img{
+    display:flex;
+    flex-flow: row;
     height:45vh;
     width:45vh;
 }
@@ -105,6 +107,8 @@ h1, h2{
     font-size: 2rem;
    display:flex;
    flex-flow: row;
+   justify-content: center;
+
 }
 .team a:hover{
     color:black;
@@ -129,9 +133,36 @@ h3{
 
 
 @media(max-width:800px){
+    #nav{
+        flex-direction: column;
+    }
+    .smalltxt{
+        padding:0;
+        text-align: center;
+    }
+    .top_nav a{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        text-decoration: none;
+    }
+    .bottom_nav{
+        flex-direction: column;
+    }
+    .bottom_nav a{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid black;
+    }
     .header{
         flex-flow: column;
     }
+    .header p{
+        font-size: 1.6rem;
+    }
+    ]
     h1{
         padding:20% 15% 20% 15%;
     }
@@ -139,16 +170,24 @@ h3{
         margin:0;
         border-radius: 0;
     }
-    .links{
+    .links, .team{
         flex-flow: column;
         justify-content: center;
     }
-    .links img{
+    .links img, .team img{
         size:cover;
         height:45vh;
         width:80%;
         padding: 0 0 0 15%;
         border-radius: 0%;
+    }
+    .team h3, .team p{
+        text-align: center;
+        margin:0 0 0 10%;
+    }
+    .team a{
+        justify-content: center;
+        margin: 0 0 2% 0;
     }
 }
 
