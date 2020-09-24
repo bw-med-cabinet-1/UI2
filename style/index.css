@@ -28,9 +28,9 @@ body{
 }
 .top_nav a{
     font-family: 'Montserrat', sans-serif;
-    border: 1px solid green;
+    border: 1px solid slateblue;
     border-radius: 10%;
-    padding:2% 0;
+    padding:1.6% 0;
 }
 .top_nav a:hover{
     background:black;
@@ -215,6 +215,7 @@ h3{
         flex-direction: column;
         text-align: center;
         text-decoration: none;
+        border-radius:0;
     }
     .bottom_nav{
         flex-direction: column;
